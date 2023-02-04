@@ -3,7 +3,7 @@
 {
 	"name": "xc-bela",
 	"context": ".",
-	"image": "ebai101/xc-bela:latest",
+	"image": "adrianduke/xc-bela:latest",
 	"workspaceFolder": "/workspace",
 	"settings": {
 		"terminal.integrated.shell.linux": "/bin/bash",
@@ -13,7 +13,7 @@
 		"--env-file", ".devcontainer/devcontainer.env",
 		"--network", "host",
 		"--cap-add=SYS_PTRACE",
-		"--security-opt", "seccomp=unconfined",
+		"--security-opt", "seccomp=unconfined"
 	],
 	"workspaceMount": "source=xc-bela-src,target=/workspace,type=volume",
 	"mounts": [
@@ -24,6 +24,7 @@
 		"llvm-vs-code-extensions.vscode-clangd",
 		"webfreak.debug",
 		"twxs.cmake",
-		"ms-vscode.cmake-tools"
+		"ms-vscode.cmake-tools",
+		"ms-vscode.cpptools"
 	]
 }
